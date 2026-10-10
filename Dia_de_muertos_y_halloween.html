@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Día de Muertos y Halloween</title>
+
+    <style>
+
+        /* DISEÑO GENERAL */
+
+        body {
+            background-color: #800080;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* TITULO PRINCIPAL */
+
+        h1 {
+            color: #FFD700;
+            font-size: 40px;
+        }
+
+        h2 {
+            color: #FFD700;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        /* IMAGEN PRINCIPAL */
+
+        .portada {
+            width: 600px;
+            max-width: 90%;
+            height: 300px;
+            object-fit: cover;
+            border: 4px solid #FFD700;
+            border-radius: 15px;
+            margin: 20px auto;
+        }
+
+        /* TABLA DE TEMAS */
+
+        table {
+            width: 80%;
+            margin: 30px auto;
+            border-collapse: collapse;
+            background-color: #4B0082;
+        }
+
+        th {
+            background-color: #4B0082;
+            color: #FFD700;
+            padding: 15px;
+            border: 2px solid #FFD700;
+            font-size: 20px;
+        }
+
+        td {
+            border: 2px solid #FFD700;
+            padding: 18px;
+        }
+
+        td a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            display: block;
+        }
+
+        td:hover {
+            background-color: #9932CC;
+        }
+
+        td a:hover {
+            color: #FFD700;
+        }
+
+        /* SECCIONES DE INFORMACION */
+
+        .contenido {
+            display: none;
+            width: 80%;
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #4B0082;
+            border: 3px solid #FFD700;
+            border-radius: 15px;
+            box-sizing: border-box;
+        }
+
+        .contenido img {
+            width: 450px;
+            max-width: 90%;
+            height: 250px;
+            object-fit: cover;
+            border: 3px solid #FFD700;
+            border-radius: 12px;
+            margin: 15px auto;
+        }
+
+        .contenido p {
+            text-align: justify;
+        }
+
+        /* BOTON PARA REGRESAR */
+
+        .boton {
+            display: inline-block;
+            background-color: #FFD700;
+            color: #4B0082;
+            padding: 12px 20px;
+            margin: 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .boton:hover {
+            background-color: white;
+        }
+
+        /* PIE DE PAGINA */
+
+        footer {
+            margin-top: 40px;
+            padding: 15px;
+            background-color: #4B0082;
+            border-top: 2px solid #FFD700;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- PORTADA -->
+
+    <h1>Día de Muertos y Halloween</h1>
+
+    <h2>Tradiciones, historia y cultura</h2>
+
+    <p>
+        Bienvenidos a nuestra página web, donde conoceremos
+        las características y tradiciones del Día de Muertos
+        y Halloween.
+    </p>
+
+    <!-- IMAGEN PRINCIPAL -->
+
+    <img class="portada"
+         src="portada.jpg"
+         alt="Día de Muertos y Halloween">
+
+    <h2>Selecciona un tema</h2>
+
+    <!-- TABLA CON LOS TRES TEMAS -->
+
+    <table>
+
+        <tr>
+            <th>Temas</th>
+        </tr>
+
+        <tr>
+            <td>
+                <a href="#introduccion"
+                   onclick="mostrarTema('introduccion'); return false;">
+                     Introducción
+                </a>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <a href="#definicion"
+                   onclick="mostrarTema('definicion'); return false;">
+                     Definición
+                </a>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <a href="#vestimenta"
+                   onclick="mostrarTema('vestimenta'); return false;">
+                     Vestimenta
+                </a>
+            </td>
+        </tr>
+
+    </table>
+
+
+    <!-- INFORMACION DE INTRODUCCION -->
+
+    <div id="introduccion" class="contenido">
+
+        <h2>Introducción</h2>
+
+        <img src="introduccion.jpg"
+             alt="Celebración del Día de Muertos">
+
+        <p>
+            El Día de Muertos y Halloween son celebraciones que
+            se realizan entre finales de octubre y principios
+            de noviembre. Aunque tienen diferentes orígenes y
+            significados, ambas forman parte de las tradiciones
+            culturales de diferentes comunidades.
+        </p>
+
+        <p>
+            El Día de Muertos es una tradición mexicana dedicada
+            a recordar y honrar a los seres queridos fallecidos.
+            Halloween, por su parte, se caracteriza por los
+            disfraces, las calabazas, los dulces y las
+            decoraciones relacionadas con el misterio.
+        </p>
+
+        <a href="#" class="boton" onclick="volver(); return false;">
+            Volver a los temas
+        </a>
+
+    </div>
+
+
+    <!-- INFORMACION DE DEFINICION -->
+
+    <div id="definicion" class="contenido">
+
+        <h2>Definición</h2>
+
+        <h3>Día de Muertos</h3>
+
+        <img src="ofrenda.jpg"
+             alt="Tradición mexicana del Día de Muertos">
+
+        <p>
+            El Día de Muertos es una tradición mexicana en la que
+            las familias recuerdan y honran a sus seres queridos
+            que han fallecido. Entre sus elementos principales
+            se encuentran las ofrendas, las flores de cempasúchil,
+            las veladoras, las fotografías y los alimentos.
+        </p>
+
+        <h3>Halloween</h3>
+
+        <img src="halloween.jpg"
+             alt="Decoración de Halloween">
+
+        <p>
+            Halloween es una celebración que se realiza el
+            31 de octubre. Actualmente es conocida por los
+            disfraces, las calabazas, los dulces y las
+            decoraciones de personajes y criaturas relacionadas
+            con el terror y lo sobrenatural.
+        </p>
+
+        <a href="#" class="boton" onclick="volver(); return false;">
+            Volver a los temas
+        </a>
+
+    </div>
+
+
+    <!-- INFORMACION DE VESTIMENTA -->
+
+    <div id="vestimenta" class="contenido">
+
+        <h2>Vestimenta</h2>
+
+        <h3>Vestimenta del Día de Muertos</h3>
+
+        <img src="altar.jpg"
+             alt="Vestimenta de Catrina">
+
+        <p>
+            Durante el Día de Muertos algunas personas utilizan
+            vestimenta tradicional mexicana o se caracterizan
+            como Catrinas y Catrines. El maquillaje de calavera
+            es uno de los elementos más conocidos y puede
+            decorarse con flores y diferentes colores.
+        </p>
+
+        <h3>Vestimenta de Halloween</h3>
+
+        <img src="disfraz.jpg"
+             alt="Disfraces de Halloween">
+
+        <p>
+            Durante Halloween es común utilizar disfraces de
+            brujas, fantasmas, monstruos, vampiros y personajes
+            fantásticos. Las personas también utilizan máscaras,
+            maquillaje y accesorios para complementar sus
+            disfraces.
+        </p>
+
+        <a href="#" class="boton" onclick="volver(); return false;">
+            Volver a los temas
+        </a>
+
+    </div>
+
+
+    <!-- PIE DE PAGINA -->
+
+    <footer>
+
+        <p>
+            Proyecto escolar: Día de Muertos y Halloween
+        </p>
+
+    </footer>
+
+
+    <!-- FUNCIONES PARA MOSTRAR LOS TEMAS -->
+
+    <script>
+
+        function mostrarTema(tema) {
+
+            var secciones = document.getElementsByClassName("contenido");
+
+            for (var i = 0; i < secciones.length; i++) {
+                secciones[i].style.display = "none";
+            }
+
+            document.getElementById(tema).style.display = "block";
+
+            document.getElementById(tema).scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+
+        }
+
+        function volver() {
+
+            var secciones = document.getElementsByClassName("contenido");
+
+            for (var i = 0; i < secciones.length; i++) {
+                secciones[i].style.display = "none";
+            }
+
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+
+        }
+
+    </script>
+
+</body>
+
+</html>
